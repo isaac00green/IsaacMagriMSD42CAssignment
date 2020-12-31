@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] float paddingx =  0.6f;
     [SerializeField] float paddingy =  0.9f;
 
+
     float xMin, xMax, yMin, yMax;
 
 
@@ -47,7 +48,7 @@ public class Player : MonoBehaviour
         newXPos = Mathf.Clamp(newXPos, xMin, xMax);
 
         var deltaY = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
-        var newYPos = transform.position.y + deltaY;
+        var newYPos = transform.position.y;
         newYPos = Mathf.Clamp(newYPos, yMin, yMax);
 
         this.transform.position = new Vector2(newXPos, newYPos);
