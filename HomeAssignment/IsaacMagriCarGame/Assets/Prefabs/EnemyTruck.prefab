@@ -25,9 +25,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8165287999030175843}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9999893, w: 0.0046363617}
+  m_LocalRotation: {x: -0, y: 0, z: -0.9999893, w: -0.004633946}
   m_LocalPosition: {x: -0.83, y: 3.97, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6829907, y: 1.6829907, z: 1.6829907}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -95,7 +95,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d3882ef0e1a5b4e9a434cc38a840fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 0}
+  waypoints: []
   enemyMoveSpeed: 2
-  waveConfig: {fileID: 11400000, guid: cf326300655ca3745a64462a7edd88d4, type: 2}
+  waveConfig: {fileID: 0}

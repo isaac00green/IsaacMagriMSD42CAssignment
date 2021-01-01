@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2908775390461265223}
   - component: {fileID: 2908775390461265220}
+  - component: {fileID: 4814253694776371295}
   m_Layer: 0
   m_Name: EnemyPoliceCar
   m_TagString: Untagged
@@ -24,9 +25,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2908775390461265221}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9999828, w: 0.005876727}
+  m_LocalRotation: {x: -0, y: 0, z: -0.99998283, w: -0.005872985}
   m_LocalPosition: {x: 1.62, y: 3.89, z: 0}
-  m_LocalScale: {x: 0.58063877, y: 0.58063877, z: 0.58063877}
+  m_LocalScale: {x: 0.953521, y: 0.953521, z: 0.953521}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -82,3 +83,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4814253694776371295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2908775390461265221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65d3882ef0e1a5b4e9a434cc38a840fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  enemyMoveSpeed: 2
+  waveConfig: {fileID: 11400000, guid: 18177c3d96f649d4b8502b90ecea2d3a, type: 2}

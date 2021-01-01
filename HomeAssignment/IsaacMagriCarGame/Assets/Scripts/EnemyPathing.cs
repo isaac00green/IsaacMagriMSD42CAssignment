@@ -35,7 +35,7 @@ public class EnemyPathing : MonoBehaviour
 
             targetPosition.z = 0f;
 
-            var enemyMovement = enemyMoveSpeed * Time.deltaTime;
+            var enemyMovement = waveConfig.GetEnemyMoveSpeed() * Time.deltaTime;
 
              transform.position = Vector2.MoveTowards(transform.position, targetPosition, enemyMovement);
 
@@ -44,12 +44,18 @@ public class EnemyPathing : MonoBehaviour
                 waypointIndex++;
             }
 
-       
         }
 
         else
         {
             Destroy(gameObject);
         }
+
+
+    }
+
+    public void SetWaveConfig(WaveConfig waveConfigToSet)
+    {
+        waveConfig = waveConfigToSet;
     }
 }
