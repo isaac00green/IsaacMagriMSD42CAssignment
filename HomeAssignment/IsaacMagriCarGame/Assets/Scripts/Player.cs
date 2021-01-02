@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float paddingx =  0.6f;
     [SerializeField] float paddingy =  0.9f;
+    [SerializeField] float health = 500f;
 
 
     float xMin, xMax, yMin, yMax;
@@ -52,5 +53,22 @@ public class Player : MonoBehaviour
         newYPos = Mathf.Clamp(newYPos, yMin, yMax);
 
         this.transform.position = new Vector2(newXPos, newYPos);
+    }
+
+    private void OnTriggerEnter2D(Collider2D otherObject)
+    {
+        DamageDealer dmgDealer = otherObject.gameObject.GetComponent<DamageDealer>();
+
+        ProcessHit(dmgDealer);
+    }
+
+    private void ProcessHit(DamageDealer dmgDealer)
+    {
+        health -= dmgDealer.GetDamage();
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
