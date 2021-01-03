@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float paddingx =  0.6f;
     [SerializeField] float paddingy =  0.9f;
-    [SerializeField] float health = 500f;
+    [SerializeField] float health = 50f;
 
 
     float xMin, xMax, yMin, yMax;
@@ -60,6 +60,8 @@ public class Player : MonoBehaviour
         DamageDealer dmgDealer = otherObject.gameObject.GetComponent<DamageDealer>();
 
         ProcessHit(dmgDealer);
+
+        Destroy(otherObject.gameObject);
     }
 
     private void ProcessHit(DamageDealer dmgDealer)

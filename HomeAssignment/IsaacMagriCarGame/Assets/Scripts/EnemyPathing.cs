@@ -9,6 +9,7 @@ public class EnemyPathing : MonoBehaviour
     [SerializeField] float enemyMoveSpeed = 2f;
 
     [SerializeField] WaveConfig waveConfig;
+    [SerializeField] int scoreValue = 5;
 
     int waypointIndex = 0;
 
@@ -49,6 +50,7 @@ public class EnemyPathing : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            FindObjectOfType<GameSession>().AddToScore(scoreValue);
         }
 
 
