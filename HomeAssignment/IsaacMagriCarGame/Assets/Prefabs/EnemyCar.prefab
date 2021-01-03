@@ -11,8 +11,10 @@ GameObject:
   - component: {fileID: 1121696938547011213}
   - component: {fileID: 1121696938547011218}
   - component: {fileID: 1259550262969855423}
+  - component: {fileID: 4683231024640017604}
   - component: {fileID: 8835185377115443816}
-  - component: {fileID: 6049503445858994558}
+  - component: {fileID: 4572158247273249837}
+  - component: {fileID: -5036856686334543899}
   m_Layer: 0
   m_Name: EnemyCar
   m_TagString: Untagged
@@ -100,7 +102,24 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   enemyMoveSpeed: 2
-  waveConfig: {fileID: 11400000, guid: 1af836dfb69fd2444aba8c45e2575c55, type: 2}
+  waveConfig: {fileID: 0}
+--- !u!114 &4683231024640017604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121696938547011219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58414e4424aed8443b3bfc0c79dd328f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  enemyLaserPrefab: {fileID: 3133366791525019246, guid: 9c077b9088ed9e24b80ee03fea543be1, type: 3}
+  enemyLaserSpeed: 10
 --- !u!60 &8835185377115443816
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -111,7 +130,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -280,7 +299,28 @@ PolygonCollider2D:
       - {x: 1.345, y: -3.75}
       - {x: 1.435, y: -3.7099998}
       - {x: 1.505, y: -3.6499999}
---- !u!114 &6049503445858994558
+--- !u!50 &4572158247273249837
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121696938547011219}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-5036856686334543899
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -289,11 +329,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1121696938547011219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58414e4424aed8443b3bfc0c79dd328f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d676a40af751394b9823cea0d2d7f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotCounter: 0
-  minTimeBetweenShots: 0.2
-  maxTimeBetweenShots: 3
-  enemyLaserPrefab: {fileID: 3133366791525019246, guid: 9c077b9088ed9e24b80ee03fea543be1, type: 3}
-  enemyLaserSpeed: 10
+  damage: 2

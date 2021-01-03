@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4815125879573058157}
   - component: {fileID: -1928920970225396203}
   - component: {fileID: -8043096460560310688}
+  - component: {fileID: 5441928531554445652}
+  - component: {fileID: 7140034661586706011}
   m_Layer: 0
   m_Name: EnemyMotorBike
   m_TagString: Untagged
@@ -110,7 +112,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -498,3 +500,37 @@ MonoBehaviour:
   maxTimeBetweenShots: 5
   enemyLaserPrefab: {fileID: 3133366791525019246, guid: 9c077b9088ed9e24b80ee03fea543be1, type: 3}
   enemyLaserSpeed: 10
+--- !u!50 &5441928531554445652
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999782375522623026}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &7140034661586706011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999782375522623026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d676a40af751394b9823cea0d2d7f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2

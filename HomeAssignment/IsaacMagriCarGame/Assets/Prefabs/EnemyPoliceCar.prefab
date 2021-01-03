@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2908775390461265220}
   - component: {fileID: 4814253694776371295}
   - component: {fileID: 1269825311511092030}
+  - component: {fileID: 5775010065638878419}
+  - component: {fileID: 7117568661077738178}
   m_Layer: 0
   m_Name: EnemyPoliceCar
   m_TagString: Untagged
@@ -99,7 +101,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   enemyMoveSpeed: 2
-  waveConfig: {fileID: 11400000, guid: 18177c3d96f649d4b8502b90ecea2d3a, type: 2}
+  waveConfig: {fileID: 0}
 --- !u!60 &1269825311511092030
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -110,7 +112,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -157,3 +159,37 @@ PolygonCollider2D:
       - {x: 0.48499998, y: -1.77}
       - {x: 0.555, y: -1.74}
       - {x: 0.685, y: -1.5899999}
+--- !u!114 &5775010065638878419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2908775390461265221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d676a40af751394b9823cea0d2d7f28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
+--- !u!50 &7117568661077738178
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2908775390461265221}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 1
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
