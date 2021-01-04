@@ -102,6 +102,7 @@ MonoBehaviour:
   - {fileID: 0}
   enemyMoveSpeed: 2
   waveConfig: {fileID: 0}
+  scoreValue: 5
 --- !u!60 &1269825311511092030
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -171,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d676a40af751394b9823cea0d2d7f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 3
 --- !u!50 &7117568661077738178
 Rigidbody2D:
   serializedVersion: 4

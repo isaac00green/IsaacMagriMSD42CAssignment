@@ -103,6 +103,7 @@ MonoBehaviour:
   - {fileID: 0}
   enemyMoveSpeed: 2
   waveConfig: {fileID: 0}
+  scoreValue: 5
 --- !u!114 &4683231024640017604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,4 +333,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d676a40af751394b9823cea0d2d7f28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 4
