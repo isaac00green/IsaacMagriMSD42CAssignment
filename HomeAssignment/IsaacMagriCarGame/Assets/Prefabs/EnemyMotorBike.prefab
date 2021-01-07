@@ -496,11 +496,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58414e4424aed8443b3bfc0c79dd328f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotCounter: 2
+  shotCounter: 0
   minTimeBetweenShots: 0.2
-  maxTimeBetweenShots: 5
+  maxTimeBetweenShots: 1.5
   enemyLaserPrefab: {fileID: 3133366791525019246, guid: 9c077b9088ed9e24b80ee03fea543be1, type: 3}
-  enemyLaserSpeed: 10
+  enemyLaserSpeed: 17
 --- !u!50 &5441928531554445652
 Rigidbody2D:
   serializedVersion: 4

@@ -118,9 +118,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotCounter: 0
   minTimeBetweenShots: 0.2
-  maxTimeBetweenShots: 3
+  maxTimeBetweenShots: 1.5
   enemyLaserPrefab: {fileID: 3133366791525019246, guid: 9c077b9088ed9e24b80ee03fea543be1, type: 3}
-  enemyLaserSpeed: 10
+  enemyLaserSpeed: 17
 --- !u!60 &8835185377115443816
 PolygonCollider2D:
   m_ObjectHideFlags: 0
