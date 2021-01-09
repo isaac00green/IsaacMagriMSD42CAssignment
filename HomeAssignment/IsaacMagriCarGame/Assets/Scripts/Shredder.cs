@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class Shredder : MonoBehaviour
 {
-    
-
-
     private void OnCollisionEnter2D(Collision2D otherObject)
     {
         print(otherObject.gameObject.name);

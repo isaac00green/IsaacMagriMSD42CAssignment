@@ -104,6 +104,8 @@ MonoBehaviour:
   enemyMoveSpeed: 2
   waveConfig: {fileID: 0}
   scoreValue: 5
+  obstacleAvoided: {fileID: 8300000, guid: 51a46fadf37315142af0d9ba49df949d, type: 3}
+  obstacleAvoidedSoundVolume: 0.3
 --- !u!114 &4683231024640017604
 MonoBehaviour:
   m_ObjectHideFlags: 0

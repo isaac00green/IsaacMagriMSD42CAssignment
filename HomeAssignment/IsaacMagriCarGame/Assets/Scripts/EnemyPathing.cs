@@ -11,6 +11,9 @@ public class EnemyPathing : MonoBehaviour
     [SerializeField] WaveConfig waveConfig;
     [SerializeField] int scoreValue = 5;
 
+    [SerializeField] AudioClip obstacleAvoided;
+    [SerializeField] [Range(0, 1)] float obstacleAvoidedSoundVolume = 0.75f;
+
     int waypointIndex = 0;
 
 
@@ -51,6 +54,7 @@ public class EnemyPathing : MonoBehaviour
         {
             Destroy(gameObject);
             FindObjectOfType<GameSession>().AddToScore(scoreValue);
+            AudioSource.PlayClipAtPoint(obstacleAvoided, Camera.main.transform.position, obstacleAvoidedSoundVolume);
         }
 
 

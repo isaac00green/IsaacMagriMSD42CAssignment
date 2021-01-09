@@ -102,6 +102,8 @@ MonoBehaviour:
   enemyMoveSpeed: 1
   waveConfig: {fileID: 0}
   scoreValue: 5
+  obstacleAvoided: {fileID: 8300000, guid: 51a46fadf37315142af0d9ba49df949d, type: 3}
+  obstacleAvoidedSoundVolume: 0.3
 --- !u!60 &6478225427014415559
 PolygonCollider2D:
   m_ObjectHideFlags: 0
