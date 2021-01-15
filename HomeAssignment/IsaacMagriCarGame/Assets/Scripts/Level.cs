@@ -21,6 +21,7 @@ public class Level : MonoBehaviour
     {
         //Game Scene
         SceneManager.LoadScene("CarGame");
+        FindObjectOfType<GameSession>().ResetGame();
     }
 
     public void LoadGameOver()
@@ -31,5 +32,16 @@ public class Level : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    IEnumerator WinnerSceneWaitAndLoad()
+    {
+        yield return new WaitForSeconds(delayInSeconds);
+        SceneManager.LoadScene("WinScene");
+    }
+
+    public void LoadWinnerScene()
+    {
+        StartCoroutine(WinnerSceneWaitAndLoad());
     }
 }

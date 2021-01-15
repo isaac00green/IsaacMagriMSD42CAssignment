@@ -43,4 +43,17 @@ public class GameSession : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    public void ProccessScore()
+    {
+        if (score >= 100)
+        {
+            Win();
+        }
+    }
+
+    private void Win()
+    {
+        FindObjectOfType<Level>().LoadWinnerScene();
+    }
 }
