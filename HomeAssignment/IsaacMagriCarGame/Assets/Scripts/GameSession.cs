@@ -35,7 +35,19 @@ public class GameSession : MonoBehaviour
 
     public void AddToScore(int scoreValue)
     {
-        score += scoreValue;
+
+
+        if (FindObjectOfType<Player>().GetHealth() > 0 && score < 100)
+        {
+            score += scoreValue;
+        }
+
+        if (score >= 100)
+        {
+            Win();
+        }
+
+
     }
 
 
@@ -44,13 +56,6 @@ public class GameSession : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void ProccessScore()
-    {
-        if (score >= 100)
-        {
-            Win();
-        }
-    }
 
     private void Win()
     {
