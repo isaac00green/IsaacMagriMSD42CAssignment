@@ -721,6 +721,10 @@ PrefabInstance:
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 5716564338446002643, guid: 5931376ccaee48d47a190a0add8d90b1, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5716564338446002670, guid: 5931376ccaee48d47a190a0add8d90b1, type: 3}
       propertyPath: m_Name
       value: StartMenuCanvas
